@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Ms+Madi&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../images/favicon-32x32.png">
+    <link rel="stylesheet" href="../css/hazard-list.css">
+    <link rel="stylesheet" href="../css/hazard-list-aside.css">
+    <script src="https://kit.fontawesome.com/04b07c81e8.js" crossorigin="anonymous"></script>
+    <script src="../javascript/hazard-list-aside.js" defer></script>
+    <title>Hazard From</title>
+</head>
+
+<body>
+    <header class="header-nav">
+        <a href="../html/product-details.html"><i class="fa-solid fa-backward-step"></i></a>
+        <h3>Hazard:Step 2 of 2</h3>
+    </header>
+    <main>
+        <div id="backdrop" onclick="closeAsideModal()"></div>
+        <aside class="model-container">
+            <div>
+                <button class="btn-cross" onclick="closeAsideModal()"> <i class="fa-sharp fa-solid fa-xmark"></i>
+                </button>
+                <h2>Model title</h2>
+                <p>Hello from inside the model!</p>
+            </div>
+            <div> <button class="btn-ok" onclick="closeAsideModal()">OK</button></div>
+        </aside>
+        <p class="heading-hazard">Hazard List</p>
+        <nav class="hazard-list-container">
+            <form action="" name="harazd-list-form" id="harazd-list-form">
+                <div class="hazard-list-que">
+                    <p>1. Are you working in an environment that requires flame resistant clothing(based on a hazard
+                        assessment)? <button type="button" class="questionmark-showaside" onclick="showAsideModal()"> <i
+                                class="fa-solid fa-circle-question"></i></button></p>
+                    <input type="radio" name="user-answer" id="verify-no" required="required">
+                    <label for="verify-no">No</label>
+                    <input type="radio" name="user-answer" id="verify-yes" required="required">
+                    <label for="verify-yes">Yes</label>
+                </div>
+                <div class="hazard-list-que">
+                    <p>2. How much of this material is expected to contact your garment? <button type="button"
+                            class="questionmark-showaside" onclick="showAsideModal()"><i
+                                class="fa-solid fa-circle-question"></i></button></p>
+                    <input type="radio" name="product-material" id="material-light" required="required"
+                        onclick="change()">
+                    <label for="material-light">Light</label>
+                    <input type="radio" name="product-material" id="material-moderate" required="required">
+                    <label for="material-moderate">Moderate</label>
+                    <input type="radio" name="product-material" id="material-heavy" required="required">
+                    <label for="material-heavy">Heavy</label>
+                </div>
+                <div class="hazard-list-que">
+                    <p>3. Liquid exposure intenity <button type="button" class="questionmark-showaside"
+                            onclick="showAsideModal()"><i class="fa-solid fa-circle-question"></i></button></p>
+                    <input type="radio" name="liquid-intenity" id="liquid-mist" required="required">
+                    <label for="liquid-mist">Mist</label>
+                    <input type="radio" name="liquid-intenity" id="liquid-spray" required="required">
+                    <label for="liquid-spray">Spray</label>
+                    <input type="radio" name="liquid-intenity" id="liquid-jet" required="required">
+                    <label for="liquid-jet">Jet</label>
+                </div>
+                <div class="hazard-list-que-4">
+                    <p>4. Duration of expected exposure(cumulative) <button type="button" class="questionmark-showaside"
+                            onclick="showAsideModal()"> <i class="fa-solid fa-circle-question"></i></button></p>
+                    <div class="input-box-container">
+                        <input type="number" id="duration-input" required="required" maxlength="2">
+                        <div>
+                            <label for="duration-input" class="hours-btn">Hours</label>
+                            <label for="duration-input" class="minutes-btn">Minutes</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="hazard-list-que-5">
+                    <p>5. Direction of exposure <button type="button" class="questionmark-showaside"
+                            onclick="showAsideModal()"> <i class="fa-solid fa-circle-question"></i></button></p>
+                    <label for="direction-exposure"></label>
+                    <select name="exposure" id="direction-exposure" required="required" type="number">
+                        <option></option>
+                        <option>Localized - Front of Torso</option>
+                        <option>Area</option>
+                        <option>Others</option>
+                    </select>
+                </div>
+                <div class="footer-nav">
+                    <button class="submit-button" type="submit" disabled="disabled">View Matching Products</button>
+                </div>
+            </form>
+        </nav>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../homePage/images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/04b07c81e8.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Ms+Madi&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="front-page.css">
+    <script src="./javascript/front-page.js" defer></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- <div class="skeleton"></div> -->
+    <header class="skeleton header-container" onclick="closeSubMenu()">
+        <h2>Home</h2>
+    </header>
+    <main>
+        <div class="top-container-and-first-row">
+            <section data-isopen="false" class="top-menu-part">
+                <div class=" logo-container" onclick="closeSubMenu()">
+                    <div id="squares-icon">
+                        <div class="square skeleton"></div>
+                        <div class="square skeleton"></div>
+                        <div class="square skeleton"></div>
+                        <div id="green-square" class="skeleton"></div>
+                    </div>
+                    <p class="icons-heading skeleton">DuPont<sup>TM</sup> SafeSPEC<sup>TM</sup></p>
+                </div>
+                <img src="images/homepageimg.jpg" alt="Brand-image" class="brand-image skeleton"
+                    onclick="closeSubMenu()">
+                <div class=" middle-paragraph skeleton" onclick="closeSubMenu()">
+                    <p>Don't take a chance <br> when it comes to <span class="text-bold">protection</span></p>
+                    <p> Find garments with confidence using SafeSPEC </p>
+                </div>
+            </section>
+            <section>
+                <nav class="home-nav-container skeleton">
+                    <section class="first-row-nav-container first-grid">
+                        <div class="nav-item skeleton" onclick="openSubMenu()">
+                            <i class="fa-solid fa-prescription-bottle fa-3x skeleton"></i>
+                            <p class="first-item-chemical skeleton">Chemical Resistance</p>
+                        </div>
+                        <div class="nav-item">
+                            <i class="fa-solid fa-person fa-3x skeleton"></i>
+                            <a href="./html/product-details.html">
+                                <p class="skeleton">Products</p>
+                            </a>
+                        </div>
+                        <div class="nav-item">
+                            <i class="fa-solid fa-toolbox fa-3x"></i>
+                            <p class="skeleton">Selector Tools</p>
+                        </div>
+                    </section>
+        </div>
+        <aside class="aside-list-items submenu-container">
+            <div class="aside-nav-item">
+                <i class="fa-sharp fa-solid fa-tag"></i>
+                <p>Name</p>
+            </div>
+            <div class="aside-nav-item">
+                <i class="fa-brands fa-dropbox"></i>
+                <p>CAS</p>
+            </div>
+            <div class="aside-nav-item">
+                <i class="fa-solid fa-calendar-days"></i>
+                <p>Class</p>
+            </div>
+            <div class="aside-nav-item">
+                <i class="fa-sharp fa-solid fa-vest"></i>
+                <p>Fabric</p>
+            </div>
+        </aside>
+        <section class="skeleton second-row-nav-container">
+            <div class="nav-item">
+                <i class="fa-regular fa-circle-question fa-3x skeleton"></i>
+                <p class="skeleton">FAQ</p>
+            </div>
+            <div class="nav-item">
+                <i class="fa-regular fa-address-book fa-3x skeleton"></i>
+                <p class="skeleton">Contact Us</p>
+            </div>
+            <div class="nav-item">
+                <i class="fa-solid fa-circle-info fa-3x skeleton"></i>
+                <p class="skeleton">About US</p>
+            </div>
+        </section>
+        </nav>
+        </section>
+
+</body>
+
+</html>
